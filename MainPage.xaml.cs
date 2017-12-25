@@ -30,10 +30,12 @@ namespace WMR_SVR_Launcher
 
         private async void Button_ClickAsync(object sender, RoutedEventArgs e)
         {
-            // - SteamVR
-            //Uri uri = new Uri("steam://run/250820");
+            //250820 - SteamVR
+            Uri uri = new Uri("steam://run/250820");
+
+            //For debugging
             //346900 - Adventure Capitalist
-            Uri uri = new Uri("steam://run/346900");
+            //Uri uri = new Uri("steam://run/346900");
             await Launcher.LaunchUriAsync(uri);
         }
 
